@@ -14,8 +14,9 @@ function App() {
   const [message, setMessage] = useState("");
 
   function fetchUsers() {
-    fetch("http://localhost:5000/users")
-      .then(function (res) {
+fetch("https://fullstack-app-a96x.onrender.com/users")
+
+    .then(function (res) {
         return res.json();
       })
       .then(function (data) {
@@ -24,7 +25,7 @@ function App() {
   }
 
   function registerUser() {
-    fetch("http://localhost:5000/register", {
+    fetch("https://fullstack-app-a96x.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
